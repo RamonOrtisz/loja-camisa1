@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; ;
+}
+html {
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-family: 'Sail', cursive;
+}
+
+header, footer {
+    background-color: black;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: #818181;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 489px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-camisa {
+    flex-wrap: wrap;
+}
+
+.lista-camisa li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 26px;
+}
+
+.lista-camisa img {
+    max-width: 80%;
+}
+
+.lista-camisa li h3 {
+    margin: 26px 0;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+.lista-camisa li strong {
+    display: block;
+    margin: 16px 0;
+}
+
+.lista-bermuda li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 26px;
+}
+
+.lista-bermuda img {
+    max-width: 70%;
+}
+
+.lista-bermuda {
+    flex-wrap: wrap;
+}
+
+.lista-bermuda li h3 {
+    margin: 26px 0;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
+}
+
+del {
+    color: rgb(126, 6, 6);
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input {
+    width: 100%;
+    display: block;
+    padding: 7px;
+}
+
+form {
+    max-width: 360px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    header > .container {
+        
+        display: flex;
+        align-items: center;
+        padding-bottom: 16px;
+    
+    }
+
+    
+    .container {
+        display: block;
+        max-width: 90%;
+    }
+
+    #sobre-a-loja img {
+        max-width: 330px;
+        margin-right: 24px;
+    }
+
+    .lista-camisa {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .lista-camisa li {
+        list-style: none;
+        max-width: 100%;
+    }
+    
+    .lista-camisa img {
+        max-width: 96%;
+    }
+    
+    .lista-camisa li h3 {
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .lista-bermuda li {
+        list-style: none;
+        max-width: 90%;
+    }
+    
+    .lista-bermuda img {
+        max-width: 100%;
+    }
+    
+    .lista-bermuda {
+        display: block;
+    }
+    
+    .lista-bermuda li h3 {
+        margin: 26px 0;
+    }
+
+}
+
+
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .container {
+        font-size: 30px;
+        max-width: 90%;
+        display: block;
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%;
+        margin-right: 24px;
+    }
+
+    header > .container {
+        
+        display: flex;
+        align-items: center;
+        padding-bottom: 16px;
+    
+    }
+    
+    .lista-camisa li {
+        list-style: none;
+        margin-bottom: 50px;
+    }
+    
+    .lista-camisa img {
+        max-width: 100%;
+    }
+
+    section h2 {
+        margin-bottom: 60px;
+    }
+    
+    .lista-bermuda img {
+        max-width: 80%;
+    }
+    
+    .lista-bermuda li h3 {
+        margin: 26px 0;
+    }
+
+    .lista-camisa li button, button {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+        border: none;
+        background-color: #000000;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+        border-radius: 15px;
+    }
+
+    .form-campo {
+        margin-bottom: 26px;
+    }
+    
+    .form-campo label {
+        font-weight: bold;
+        display: block;
+    }
+    
+    .form-campo input {
+        width: 100%;
+        display: block;
+        padding: 15px;
+    }
+    
+    form {
+        max-width: 560px;
+    }
+}
